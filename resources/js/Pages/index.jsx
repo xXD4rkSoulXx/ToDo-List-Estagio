@@ -22,7 +22,6 @@ function index() {
   return (
 	<div>
 	  {popUpVisible && (
-		/* Fui forçado a meter essas tags vazias porque só por meter comentário obriga a agrupar tudo dentro da div, o que não deveria ser contabilizado como código em si a meu ver */
 		/* Passo o setPopUpVisible para ele atualizar quando for para fechar */
 	    <PopUp visible={setPopUpVisible} type={typePopUp} task={editTask} id={idTask} />
 	  )}
