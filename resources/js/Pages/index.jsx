@@ -12,7 +12,7 @@ function index() {
   const [popUpVisible, setPopUpVisible] = useState(false); {/* Variável que vai decidir e o PopUp deve ou não ser mostrado, ao clicar para ver */}
   const [typePopUp, setTypePopUp] = useState('Update'); {/* Variável que vai decidir o tipo de modal, se é de editar ou eliminar, e mete por default o Update */}
   
-  {/* Função para editar a Task */}
+  {/* Função para adicionar a Task */}
   function addTask(e) {
 	e.preventDefault(); {/* Previne o Reload da página */}
 	router.post('/addTask', {'task': newTask}); {/* Envia via POST os dados para o Controller, têm de se específicar o campo da validação como o campo task */}
